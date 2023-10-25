@@ -84,7 +84,6 @@ export const getChatCompletionStream = async (
       messages,
       ...config,
       max_tokens: undefined,
-      stream: true,
     }),
   });
   if (response.status === 404 || response.status === 405) {
