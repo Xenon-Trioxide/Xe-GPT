@@ -11,6 +11,8 @@ export const getChatCompletion = async (
 ) => {
   const headers: HeadersInit = {
     'Content-Type': 'application/json',
+    'Origin': 'https://chat.geekgpt.org',
+    'Referer': 'https://chat.geekgpt.org',
     ...customHeaders,
   };
   if (apiKey) headers.Authorization = `Bearer ${apiKey}`;
@@ -56,6 +58,8 @@ export const getChatCompletionStream = async (
 ) => {
   const headers: HeadersInit = {
     'Content-Type': 'application/json',
+    'Origin': 'https://chat.geekgpt.org',
+    'Referer': 'https://chat.geekgpt.org',
     ...customHeaders,
   };
   if (apiKey) headers.Authorization = `Bearer ${apiKey}`;
